@@ -1,6 +1,7 @@
 #!/usr/bin/python3
-from persistence import IPersistenceManager
 from .file_storage import FileStorage
+from .ipersistence_manager import IPersistenceManager
+
 
 class DataManager(IPersistenceManager):
     def __init__(self, storage: FileStorage):
